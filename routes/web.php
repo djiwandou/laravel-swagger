@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/greet', 'UserController@greet');
+
+if (App::environment(['production', 'staging'])) {
+    URL::forceScheme('https');
+}
