@@ -10,13 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+header('Access-Control-Allow-Origin: *'); 
 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/greet', 'UserController@greet');
 
-if (App::environment(['production', 'staging'])) {
-    header('Access-Control-Allow-Origin: *'); 
+if (App::environment(['production', 'staging'])) {    
     URL::forceScheme('https');
 }
