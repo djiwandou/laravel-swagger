@@ -17,5 +17,6 @@ Route::get('/', function () {
 Route::get('/greet', 'UserController@greet');
 
 if (App::environment(['production', 'staging'])) {
+    header('Access-Control-Allow-Origin: *'); 
     URL::forceScheme('https');
 }
