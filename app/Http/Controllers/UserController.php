@@ -6,7 +6,7 @@ class UserController extends Controller
 {
     /**
      * @OA\GET(
-     *     path="/api/greet",
+     *     path="/greet",
      *     tags={"greeting"},
      *     summary="Returns a Sample API response",
      *     description="A sample greeting to test out the API",
