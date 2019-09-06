@@ -13,7 +13,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "zircote/swagger-php": "2.*"
+        "zircote/swagger-php": "3.*"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
