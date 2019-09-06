@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     /**
-     * @OA\GET(
+     * @OA\Get(
      *     path="/greet",
      *     tags={"greeting"},
      *     summary="Returns a Sample API response",
